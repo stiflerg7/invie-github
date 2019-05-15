@@ -2,18 +2,35 @@
 <html>
 <head>
 	<title>prueba de invie</title>
-	<style >
-		body{margin:0;border:10px solid red;}
 
-		img{max-width:100%;
-			vertical-align: top}
+	<style media="screen">
+		body{margin:0;}
+
+		img{width:100%;
+			vertical-align:top;
+			border:10px solid red;
+			
+		}
+
+		img#responsive{
+				display:none;
+			}
+
+		@media screen and (max-width: 768px)
+		{ 
+			img#responsive{
+				display:block;
+			}
+
+		}
+
 	</style>
 </head>
 <body>
-	<img src="header.jpg">	
-	<img src="hero.jpg">
-	<img src="acustica.jpg">
-	<img src="clasica.jpg">
+	<img id="responsive" src="responsive.jpg">	
+	<img  src="header.jpg">	
+	<img  src="hero.jpg">
+	<img  src="header.jpg">
 
 
 <br><br><br><br>
